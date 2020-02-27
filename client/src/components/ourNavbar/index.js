@@ -4,8 +4,7 @@ import "./assets/css/style.css";
 
 import Login from "../logInModal/index";
 import Signup from "../signUpModal/index";
-import { Navbar, Nav, Form, FormControl, Button, Row } from "react-bootstrap";
-import { STATES } from "mongoose";
+import { Navbar, Nav, Form, FormControl, Button, Col } from "react-bootstrap";
 import { useRef } from "react";
 import {
   SET_SEARCH_TERM,
@@ -59,20 +58,25 @@ function OurNavbar() {
           />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
+              
+              <div id="house-div">
               <Button href="/home" id="nav-home-link">
                 <i id="nav-home-icon" className="fas fa-home"></i>
                 <p>Home</p>
               </Button>
+              </div>
 
+
+              <div id="dashboard-div">
               {!userId || userId === "" ? (
                 <div></div>
-              ) : (
-                <Button href="#dashboard" id="nav-home-link" href="/dashboard">
+                ) : (
+                  <Button id="nav-home-link" href="/dashboard">
                   <i id="nav-home-icon" className="fas fa-chart-line"></i>
                   <p>Dashboard</p>
                 </Button>
               )}
-            </Nav>
+              </div>
 
             <Form inline style={{ width: 500 }} onSubmit={e => {e.preventDefault()}}>
               <FormControl
@@ -80,7 +84,6 @@ function OurNavbar() {
                 type="text"
                 placeholder="Search"
                 ref={SearchValue}
-                className="mr-sm-0"
               />
               <Link id="search-button-style-text" to="/results">
                 <Button
@@ -93,10 +96,12 @@ function OurNavbar() {
               </Link>
             </Form>
 
-            <button href="#news" id="nav-news-link">
+            </Nav>
+
+            <Button href="#news" id="nav-news-link">
               <i id="nav-news-icon" className="fas fa-bell"></i>
               <p> </p>
-            </button>
+            </Button>
 
             <Nav>
               <Login />

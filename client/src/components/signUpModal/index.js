@@ -58,7 +58,7 @@ function Signup() {
   };
 
   return (
-    <Container>
+    <div>
       {/* Signup */}
       <>
         <Button id="sign-up-modal-button" onClick={handleShow}>
@@ -175,7 +175,7 @@ function Signup() {
           </Modal.Footer>
         </Modal>
       </>
-    </Container>
+    </div>
   );
 }
 

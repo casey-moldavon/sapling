@@ -58,11 +58,11 @@ function Login() {
   };
 
   return (
-    <Container>
+    <div>
       {/* Login */}
       <>
         {!userId || userId === "" ? (
-          <Button id="login-modal-button" onClick={handleShow}>
+          <Button href="" id="login-modal-button" onClick={handleShow}>
             <i id="login-button-icon" className="fas fa-sign-in-alt"></i>
             <p>Sign-In</p>
           </Button>
@@ -119,13 +119,13 @@ function Login() {
           </Modal.Body>
 
           <Modal.Footer>
-            <Button id="sign-in" variant="primary" onClick={handleSignIn}>
+            <Button href="" id="sign-in" variant="primary" onClick={handleSignIn}>
               <i id="sign-in-logo" className="fas fa-tree"></i> Sign-In
             </Button>
           </Modal.Footer>
         </Modal>
       </>
-    </Container>
+    </div>
   );
 }
 

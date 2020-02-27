@@ -90,6 +90,12 @@
     margin-right: 10%;
     padding: 0;
 }
+
+#house-div {
+    text-align: left;
+}
+
+
         #nav-home-icon {
             font-size: 50px;
             border-radius: 10px;
@@ -102,6 +108,41 @@
                 box-shadow: 0px 0px 25px 0px white;
             }
 
+#nav-home-link {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+
+    background-color: transparent;
+    border: 5px solid transparent;
+    border-radius: 10px;
+
+    margin-top: -10px;
+    margin-bottom: -15px;
+    margin-right: 10%;
+    padding: 0;
+}
+
+#house-div {
+    text-align: left;
+}
+#dashboard-div {
+    text-align: left;
+    margin-right: 20%;
+}
+
+
+        #nav-home-icon {
+            font-size: 50px;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 5px;
+        }
+            #nav-home-icon:hover, #nav-home-link:hover #nav-home-icon {
+                color: black;
+                background-color: white;
+                box-shadow: 0px 0px 25px 0px white;
+            }
 
 /* ========================= Navbar Home Link ================================================== */
 #nav-news-link {
@@ -299,6 +340,8 @@
         color: white;
         font-weight: bold;
         font-size: 17px;
+
+        margin-left: 50%;
     }
 
         #sign-in:hover {
@@ -358,9 +401,10 @@
 
 /* ========================= Search Bar ================================================== */
 #search-bar {
-    width: 70%;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 200px;
+    /* margin-left: 30%; */
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
 }
 
     #search-button-style {
