@@ -4,7 +4,7 @@
 Have you ever been in a big box retailer and price checked something you were about to buy against Amazon? We've all been there, Sapling allows you to do this but goes a step futhere enabling users to do this from anywhere as well as track products on a convenient dashbaord to wait for price drops. Sapling is a MERN stack application leveraging 3 retail APIs allowing users to track product prices across Amazon, Walmart, and Best Buy. Built on a React front end, Saplings React UI components utilize a global state file to pass state and effect hooks to refactor compartmentalized components used elsewhere in the application. User authentication is handled by passport while user account information is handled by a MongoDB backend.
 
 ## Demo
-![Site](https://sapling-tracker.herokuapp.com/) 
+- [Site](https://sapling-tracker.herokuapp.com/) 
 
  
 ## Technologies Used
